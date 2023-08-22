@@ -23,7 +23,7 @@ body {
 }
 :root {
   --font-family: "Roboto", sans-serif;
-  --font-hero: "Playfair Display", sans-serif;
+  --font-hero: "Playfair Display SC", sans-serif;
   --primary-color-bluefont: #0A224A;
   --primary-color-background: #FFF;
   font-size: 16px;
