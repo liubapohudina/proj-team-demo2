@@ -3,6 +3,10 @@
     padding-top: 36px;
     padding-bottom: 60px;
 }
+.clients-reviews .container {
+    padding-right: 16px;
+    padding-left: 16px;
+}
 .clients-title {
     color: var(--blue-font, #0A224A);
     font-family: var(--font-family);
@@ -13,7 +17,7 @@
     width: 233px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 @media  screen and (min-width: 320px) and (max-width: 375px) {
     .clients-reviews .container {
@@ -24,6 +28,12 @@
 .item-card {
     border-radius: 8px;
     background: var(--primary-color-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px;
+    max-width: 343px;
 }
 .clients-text {
     color: var(--primary-color-bluefont);
@@ -39,4 +49,9 @@
     font-weight: 700;
     line-height: 1.8;
     text-transform: uppercase;
+}
+.card-block {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
 }
