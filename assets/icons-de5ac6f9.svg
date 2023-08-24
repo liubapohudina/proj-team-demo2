@@ -9,7 +9,7 @@
   <path d="M69.0216 14L75.0157 0H79.6137L85.6079 14H82.3688L81.1029 11.0434H73.5265L72.2606 14H69.0216ZM74.6062 8.4979H80.0232L77.4357 2.44755H77.1937L74.6062 8.4979Z" />
   <path d="M87.2857 14V0H90.2642V11.4545H100V14H87.2857Z" />
   </symbol>
-  <symbol id="icon-burger" viewBox="0 0 32 32" fill="none" >
+  <symbol id="icon-burger" viewBox="0 0 32 32" >
   <path d="M28 13.3333H4"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M28 8H4"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M28 18.6667H4"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
