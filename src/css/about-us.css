@@ -56,11 +56,15 @@
 .about-us-list {
   display: flex;
   flex-direction: column;
-  max-width: 170px;
   gap: 30px;
   margin: 0 auto;
   margin-bottom: 64px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-item {
+  max-width: 170px;
 }
 
 .about-us-advantages {
@@ -87,7 +91,6 @@
 /* ? tablet */
 
 @media (min-width: 768px) {
-
   .about-us {
     background-color: #fff;
     padding: 0;
@@ -104,19 +107,21 @@
   .tablet {
     display: block;
   }
-
   .about-us-subtitle {
     font-size: 32px;
   }
-  .about-us-desc {
+  .advanatges-desc {
     font-size: 18px;
   }
   .about-us-list {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
     gap: 33px;
     margin-bottom: 0px;
   }
+  .about-us-item {
+    max-width: 170px;
+  }
 }
+/* desctop */
