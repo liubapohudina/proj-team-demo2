@@ -110,7 +110,10 @@
   .about-us-subtitle {
     font-size: 32px;
   }
-  .advanatges-desc {
+  .advantages-desc {
+    font-size: 18px;
+  }
+  .about-us-desc {
     font-size: 18px;
   }
   .about-us-list {
@@ -124,4 +127,28 @@
     max-width: 170px;
   }
 }
-/* desctop */
+/* ? desctop */
+@media (min-width: 1440px) {
+  .about-us-wrap {
+    display: flex;
+    max-width: 1320px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+  .about-us .container {
+    background-color: var(--color-bg-lightblue);
+    padding: 36px 69px 34px 69px;
+    margin: 20px auto;
+    max-width: 760px;
+  }
+
+  .about-us-list {
+    gap: 56px;
+  }
+  .tablet {
+    display: none;
+  }
+  .desctop {
+    display: block;
+  }
+}
