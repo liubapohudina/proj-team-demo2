@@ -1,0 +1,30 @@
+.best {
+  color: var(--primary-color-bluefont);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.best-list {
+  display: flex;
+  gap: 30px;
+}
+
+.best-item-name {
+  color: var(--blue-font, #0a224a);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 14px;
+}
+
+.best-item-price {
+  color: var(--blue-font, #0a224a);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 10px;
+}
