@@ -16,9 +16,9 @@ const sprite = './img/icons.svg';
     bodyScrollLock[scrollLockMethod](document.body);
 
     if (isMenuOpen) {
-      iconUse.setAttribute('href', `.${sprite}#icon-burger`);
+      iconUse.setAttribute('href', `${sprite}#icon-burger`);
     } else {
-      iconUse.setAttribute('href', `.${sprite}#icon-close`);
+      iconUse.setAttribute('href', `${sprite}#icon-close`);
     }
   };
 
