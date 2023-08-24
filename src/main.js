@@ -15,9 +15,9 @@
     bodyScrollLock[scrollLockMethod](document.body);
 
     if (isMenuOpen) {
-      iconUse.setAttribute('href', './src/img/icons.svg#icon-burger');
+      iconUse.setAttribute('href', './img/icons.svg#icon-burger');
     } else {
-      iconUse.setAttribute('href', './src/img/icons.svg#icon-close');
+      iconUse.setAttribute('href', './img/icons.svg#icon-close');
     }
   };
 
