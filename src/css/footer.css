@@ -1,4 +1,4 @@
-.footer-container {
+.footer {
   background-color: var(--primary-color-bluefont, #0a224a);
   padding-top: 36px;
   padding-bottom: 16px;
@@ -8,6 +8,7 @@
 .footer-wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 42px;
 }
 .footer-logo {
@@ -19,17 +20,16 @@
 .footer-menu {
   margin-bottom: 42px;
 }
-.footer-list:last-child {
+.footer-list:not(last-child) {
   margin-bottom: 8px;
 }
 .footer-link {
   color: var(--primary-color-background);
-  font-family: var(--font-family: 'Roboto', sans-serif);
+  font-family: var(--font-family, 'Roboto', sans-serif);
   font-size: 16px;
   line-height: 1.5; /* 150% */
 }
-.link {
-}
+
 .footer-container-social {
 }
 .footer-social {
@@ -49,7 +49,7 @@
 .footer-address-list {
 }
 .footer-address-item {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .footer-time {
   margin-bottom: 35px;
@@ -71,7 +71,80 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  text-align: center;
 }
 .Privacy {
   text-decoration-line: underline;
+}
+/*==========768============*/
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 36px;
+    position: relative;
+  }
+
+  .footer-link {
+    font-size: 18px;
+  }
+  .footer-address-link {
+    font-size: 19px;
+    line-height: normal;
+  }
+  .footer-privacy {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.07em;
+  }
+  .footer-list:not(last-child) {
+    margin-bottom: 16px;
+  }
+  .footer-address-item {
+    margin-bottom: 24px;
+  }
+  .footer-time {
+    margin-bottom: 64px;
+  }
+  .none {
+    display: block;
+  }
+
+  .footer-social-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-menu {
+    position: absolute;
+    left: 50%;
+    top: 48px;
+  }
+  .footer-wrap {
+    margin-bottom: 32px;
+  }
+}
+/*=============1440============*/
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 36px;
+  }
+  .footer-menu {
+    display: inline-flex;
+    left: 396px;
+    top: 36px;
+    gap: 30px;
+    padding: 8px;
+  }
+  .footer-address {
+    margin-bottom: 0;
+  }
+  /*.footer-address-item {
+    margin-bottom: 0;
+  }*/
+  .footer-address-list {
+    /*padding-right: 564px;*/
+    display: flex;
+    /* flex-wrap: wrap;*/
+    gap: 82px;
+    justify-content: flex-start;
+  }
 }
