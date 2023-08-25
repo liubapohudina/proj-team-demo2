@@ -42,3 +42,6 @@ import sprite from './img/icons.svg';
     iconUse.setAttribute('href', `${sprite}#icon-burger`); // Змінюємо іконку на бургер при ресайзі
   });
 })();
+
+import './scroll';
+import './scrollup';

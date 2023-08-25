@@ -1,3 +1,15 @@
+#scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-up {
+  fill: rgb(10, 34, 74, 0.3);
+}
+
 .header {
   background-color: var(--color-bg-lightblue);
 }
