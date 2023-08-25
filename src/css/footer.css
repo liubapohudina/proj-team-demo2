@@ -8,16 +8,16 @@
   margin-left: 0;
   margin-right: 0;
 }
-*/
+
 .footer-wrap-social {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
+}*/
 .footer-wrap-logo {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
 }
 /*
 .footer-firstline {
@@ -65,7 +65,8 @@
   fill: var(--primary-color-background);
 }
 
-.footer-address {
+.footer-address,
+footer-tel {
   margin-bottom: 64px;
 }
 
@@ -89,6 +90,9 @@
 .footer-none {
   display: none;
 }
+.footer-tel {
+  margin-bottom: 64px;
+}
 .footer-privacy {
   opacity: 0.6;
   color: var(--primary-color-background);
@@ -108,14 +112,14 @@
     padding-bottom: 36px;
     position: relative;
   }
-
   /*
   .footer-firstline {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
+    align-items: flex-start;
     gap: 249px;
-  }
-  */
+  }*/
+
   .footer-logo {
     margin-bottom: 32px;
   }
@@ -129,6 +133,10 @@
   .footer-address {
     margin-bottom: 0;
   }
+  .footer-tel {
+    margin-bottom: 24px;
+  }
+
   .footer-address-item:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -155,6 +163,7 @@
   */
   .footer-none {
     display: block;
+    margin-bottom: 64px;
   }
 
   .footer-social-icon {
@@ -179,21 +188,46 @@
 /*=============1440============*/
 @media screen and (min-width: 1440px) {
   .footer-menu {
-    display: flex;
     position: static;
     gap: 30px;
     flex-direction: row;
   }
-
-  /*.footer-address-item {
+  /*
+  .footer-wrap-logo {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+  }*/
+  .footer-firstline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 209px;
+  }
+  .footer-contakt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+  .footer-none {
     margin-bottom: 0;
   }
-  .footer-address-list {
-    /*padding-right: 564px;
-    display: flex;
-    /* flex-wrap: wrap;
-    gap: 82px;
-    justify-content: flex-start;
+  .footer-contakt {
+    margin-bottom: 35px;
   }
-  */
+  .footer-address-list {
+    margin-bottom: 0;
+  }
+  .footer-logo {
+    margin-bottom: 0;
+  }
+  .footer-wrap-logo {
+    margin-bottom: 24px;
+  }
+  .footer-address-list {
+    margin-right: 87px;
+  }
+  .footer-tel {
+    margin-right: 82px;
+  }
 }
