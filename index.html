@@ -16,13 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display+SC&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script type="module" crossorigin src="/project-team9/assets/index-d4a80aef.js"></script>
-    <link rel="stylesheet" href="/project-team9/assets/index-307af322.css">
+    <script type="module" crossorigin src="/project-team9/assets/index-757e2c88.js"></script>
+    <link rel="stylesheet" href="/project-team9/assets/index-92eb98f4.css">
   </head>
   <body>
     <div id="scrollToTop">
   <svg class="scroll-up" width="60" height="60">
-    <use href="/project-team9/assets/icons-1f7e3fee.svg#scroll-up"></use>
+    <use href="/project-team9/assets/icons-6d97c819.svg#scroll-up"></use>
   </svg>
 </div>
 
@@ -31,7 +31,7 @@
     <nav class="header-menu">
       <a class="header-logo" href="#">
         <svg class="main-icon" width="100" height="14">
-          <use href="/project-team9/assets/icons-1f7e3fee.svg#icon-main-logo"></use>
+          <use href="/project-team9/assets/icons-6d97c819.svg#icon-main-logo"></use>
         </svg>
       </a>
 
@@ -74,7 +74,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="mobile-menu-icon" width="32" height="32">
-          <use class="icon-use" href="/project-team9/assets/icons-1f7e3fee.svg#icon-burger"></use>
+          <use class="icon-use" href="/project-team9/assets/icons-6d97c819.svg#icon-burger"></use>
         </svg>
       </button>
     </nav>
@@ -339,7 +339,7 @@
                             maxlength="16" placeholder="Name" />
                         <span class="error-icon">
                             <svg class="icon-error" width="24" height="24">
-                                <use href="/project-team9/assets/icons-1f7e3fee.svg#icon-error"></use>
+                                <use href="/project-team9/assets/icons-6d97c819.svg#icon-error"></use>
                             </svg>
                         </span>
                     </div>
@@ -352,7 +352,7 @@
                             required />
                         <span class="error-icon">
                             <svg class="icon-error" width="24" height="24">
-                                <use href="/project-team9/assets/icons-1f7e3fee.svg#icon-error"></use>
+                                <use href="/project-team9/assets/icons-6d97c819.svg#icon-error"></use>
                             </svg>
                         </span>
                     </div>
@@ -365,7 +365,7 @@
                     <label class="sub-checkbox-label" for="user-privacy">
                         <span class="sub-checkbox-span">
                             <svg class="sub-form-checkbox-item" width="13" height="13">
-                                <use href="/project-team9/assets/icons-1f7e3fee.svg#icon-Vector"></use>
+                                <use href="/project-team9/assets/icons-6d97c819.svg#icon-Vector"></use>
                             </svg>
                         </span>
                         Agree to subscribe to the newsletter
@@ -375,8 +375,15 @@
             </form>
         </div>
         <div class="sub-photo-div">
-        <img class="sub-photo" srcset="/project-team9/assets/photo1x-7d2a4434.jpg 1x, /project-team9/assets/pcphoto2x-7c0f1ce2.jpg 2x" src="/project-team9/assets/photo1x-7d2a4434.jpg" alt="sofa photo" width="343"
-            height="300" />
+        <picture>
+            <source class="image-desctop" srcset="/project-team9/assets/pcphoto1-61ef4c14.jpg 1x, /project-team9/assets/pcphoto2x-7c0f1ce2.jpg 2x"
+                media="(min-width: 1440px)" />
+            <source srcset="/project-team9/assets/tabphoto1x-c4aaa3df.jpg 1x, /project-team9/assets/tabphoto2x-4039fedb.jpg 2x"
+                media="(min-width: 768px)" />
+            <source srcset="./img/subscribe/pcphoto1x.jpg 1x, ./img/subscribe/photo2x.jpg 2x"
+                media="(min-width: 320px)" />
+            <img src="/project-team9/assets/photo1x-7d2a4434.jpg" alt="applications">
+        </picture>
         </div>
     </div>
 </section>
