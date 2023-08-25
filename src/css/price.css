@@ -65,6 +65,9 @@
   .price .container {
     max-width: 1096px;
   }
+  .price {
+    padding: 100px 0;
+  }
   .price-list-goods {
     font-size: 32px;
   }
