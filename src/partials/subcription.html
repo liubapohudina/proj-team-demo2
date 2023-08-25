@@ -49,8 +49,15 @@
             </form>
         </div>
         <div class="sub-photo-div">
-        <img class="sub-photo" srcset="./img/subscribe/photo1x.jpg 1x, ./img/subscribe/pcphoto2x.jpg 2x" src="./img/subscribe/photo1x.jpg" alt="sofa photo" width="343"
-            height="300" />
+        <picture>
+            <source class="image-desctop" srcset="./img/subscribe/pcphoto1.jpg 1x, ./img/subscribe/pcphoto2x.jpg 2x"
+                media="(min-width: 1440px)" />
+            <source srcset="./img/subscribe/tabphoto1x.jpg 1x, ./img/subscribe/tabphoto2x.jpg 2x"
+                media="(min-width: 768px)" />
+            <source srcset="./img/subscribe/pcphoto1x.jpg 1x, ./img/subscribe/photo2x.jpg 2x"
+                media="(min-width: 320px)" />
+            <img src="./img/subscribe/photo1x.jpg" alt="applications">
+        </picture>
         </div>
     </div>
 </section>
