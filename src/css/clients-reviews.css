@@ -71,6 +71,7 @@
 .card-block {
     display: flex;
     gap: 14px;
+    align-items: center;
 }
 .card-two,
 .card-three {
@@ -125,6 +126,9 @@
     }
     .clients-card {
         justify-content: center;
+    }
+    .clients-text {
+        width: 360px;
     }
     
 }
