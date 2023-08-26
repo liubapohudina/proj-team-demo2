@@ -1,0 +1,233 @@
+.footer {
+  background-color: var(--primary-color-bluefont, #0a224a);
+  padding-top: 36px;
+  padding-bottom: 16px;
+}
+/*
+.container.footer-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer-wrap-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}*/
+.footer-wrap-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+/*
+.footer-firstline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+}*/
+.footer-logo {
+  display: block;
+  margin-bottom: 36px;
+}
+.footer-logo-icon {
+  fill: var(--primary-color-background, #fff);
+}
+.footer-menu {
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-address-item:first-child {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: var(--primary-color-background);
+  font-family: var(--font-family, 'Roboto', sans-serif);
+  font-size: 16px;
+  line-height: 1.5; /* 150% */
+}
+
+.footer-container-social {
+}
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-list {
+}
+.footer-social-link {
+}
+.footer-social-icon {
+  fill: var(--primary-color-background);
+}
+
+.footer-address,
+footer-tel {
+  margin-bottom: 64px;
+}
+
+.footer-address-list {
+  margin-bottom: 35px;
+  /*display: flex;
+  flex-direction: column;
+  gap: 8px;*/
+}
+/*
+.footer-time {
+  margin-bottom: 35px;
+}*/
+.footer-address-link {
+  color: var(--primary-color-background);
+  font-family: var(--font-family, 'Roboto', sans-serif);
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.01em;
+}
+.footer-none {
+  display: none;
+}
+.footer-tel {
+  margin-bottom: 64px;
+}
+.footer-privacy {
+  opacity: 0.6;
+  color: var(--primary-color-background);
+  font-family: var(--font-family, 'Roboto', sans-serif);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.Privacy {
+  text-decoration-line: underline;
+}
+/*==========768============*/
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    position: relative;
+  }
+  /*
+  .footer-firstline {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    gap: 249px;
+  }*/
+
+  .footer-logo {
+    margin-bottom: 32px;
+  }
+  .footer-link {
+    font-size: 18px;
+  }
+
+  .footer-address-list {
+    margin-bottom: 64px;
+  }
+  .footer-address {
+    margin-bottom: 0;
+  }
+  .footer-tel {
+    margin-bottom: 24px;
+  }
+
+  .footer-address-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .footer-address-link {
+    font-size: 19px;
+    line-height: normal;
+  }
+  .footer-privacy {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.07em;
+  }
+  /*
+  .footer-list:not(last-child) {
+    margin-bottom: 16px;
+  }
+  
+  .footer-address-item {
+    margin-bottom: 24px;
+  }
+  .footer-time {
+    margin-bottom: 64px;
+  }
+  */
+  .footer-none {
+    display: block;
+    margin-bottom: 64px;
+  }
+
+  .footer-social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-menu {
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    gap: 16px;
+    padding: 8px;
+    margin-bottom: 0;
+  }
+  /*
+  .footer-wrap {
+    margin-bottom: 32px;
+  }
+  */
+}
+/*=============1440============*/
+@media screen and (min-width: 1440px) {
+  .footer-menu {
+    position: static;
+    gap: 30px;
+    flex-direction: row;
+  }
+  /*
+  .footer-wrap-logo {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+  }*/
+  .footer-firstline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 209px;
+  }
+  .footer-contakt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+  .footer-none {
+    margin-bottom: 0;
+  }
+  .footer-contakt {
+    margin-bottom: 35px;
+  }
+  .footer-address-list {
+    margin-bottom: 0;
+  }
+  .footer-logo {
+    margin-bottom: 0;
+  }
+  .footer-wrap-logo {
+    margin-bottom: 24px;
+  }
+  .footer-address-list {
+    margin-right: 87px;
+  }
+  .footer-tel {
+    margin-right: 82px;
+  }
+}
