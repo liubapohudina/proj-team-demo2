@@ -1,0 +1,63 @@
+<section class="section-six">
+    <div class="container sub-div-main">
+        <div>
+            <h2 class="sub-h">Newsletter</h2>
+            <p class="sub-form-p">
+                Every week we will send you new designs and information about sales.
+            </p>
+            <form>
+                <div class="sub-form-div">
+                    <label class="sub-label" for="user-name"> </label>
+                    <div class="sub-input-div">
+                        <input class="sub-input" id="user-name" type="text" name="user-name" minlength="2"
+                            maxlength="16" placeholder="Name" />
+                        <span class="error-icon">
+                            <svg class="icon-error" width="24" height="24">
+                                <use href="./img/icons.svg#icon-error"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sub-form-div">
+                    <label class="sub-label" for="user-email"> </label>
+                    <div class="sub-input-div input-container">
+                        <input class="sub-input" id="user-email" type="email" name="user-email" placeholder="E-mail"
+                            required />
+                        <span class="error-icon">
+                            <svg class="icon-error" width="24" height="24">
+                                <use href="./img/icons.svg#icon-error"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sub-checkbox">
+                    <input class="sub-checkbox-input visually-hidden" id="user-privacy" type="checkbox"
+                        name="user-privacy" value="true" />
+
+                    <label class="sub-checkbox-label" for="user-privacy">
+                        <span class="sub-checkbox-span">
+                            <svg class="sub-form-checkbox-item" width="13" height="13">
+                                <use href="./img/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </span>
+                        Agree to subscribe to the newsletter
+                    </label>
+                </div>
+                <button class="sub-form-button" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="sub-photo-div">
+        <picture>
+            <source class="image-desctop" srcset="./img/subscribe/pcphoto1.jpg 1x, ./img/subscribe/pcphoto2x.jpg 2x"
+                media="(min-width: 1440px)" />
+            <source srcset="./img/subscribe/tabphoto1x.jpg 1x, ./img/subscribe/tabphoto2x.jpg 2x"
+                media="(min-width: 768px)" />
+            <source srcset="./img/subscribe/pcphoto1x.jpg 1x, ./img/subscribe/photo2x.jpg 2x"
+                media="(min-width: 320px)" />
+            <img src="./img/subscribe/photo1x.jpg" alt="applications">
+        </picture>
+        </div>
+    </div>
+</section>
