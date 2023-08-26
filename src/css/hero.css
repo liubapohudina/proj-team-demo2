@@ -1,60 +1,21 @@
-/* body {
-  font-family: var(--font-family);
-  color: var(--primary-color-bluefont);
-  background-color: var(--primary-color-background);
-}
-:root {
-  --font-family: 'Roboto', sans-serif;
-  --font-hero: 'Playfair Display SC', sans-serif;
-  --primary-color-bluefont: #0a224a;
-  --primary-color-background: #fff;
-  --color-bg-lightblue: #f7faff;
-  --color-hover-btn: #061835;
-  --color-dark-grey: #b6b6b6;
-  --color-grey: #7a7a7a;
-  --color-light-grey: #d9d9d9;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
-  align-items: center;
-  outline: 2px solid #ff0000;
-} */
+/* ------------Для екранів від 320рх------------ */
 
-
-/* -----------My work 24/08------------ */
 .container {
+  /*---тимчасовий аутлайн для зручності--- */
   outline: 2px solid blueviolet;
 }
+
 .hero {
-  background-color: var(--color-light-grey, #d9d9d9);
+  max-width: 375px;
+  background-color: var(--primary-color-background, #d9d9d9);
   background-image: url(../img/hero-img/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 192dpi) {
+  (min-resolution: 192dpi),
+  (min-resolution: 192dpi) {
   .hero {
     background-image: url(../img/hero-img/hero-bg-mob-2x.jpg);
   }
@@ -65,7 +26,8 @@
   padding-bottom: 313px;
   max-width: 300px;
   height: 717px;
-  margin: 0 auto;
+  align-items: center;
+  /*---тимчасовий аутлайн для зручності--- */
   outline: 2px solid rgb(183, 226, 43);
 }
 
@@ -77,13 +39,13 @@
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  max-width: 285px;
+  width: 285px;
   margin-bottom: 14px;
 }
 
 .hero-text {
   color: var(--primary-color-bluefont, #0a224a);
-  font-family: Roboto;
+  font-family: var(--font-family);
   font-size: 16px;
   font-style: normal;
   line-height: 1.5; /* 150% */
@@ -92,19 +54,19 @@
 }
 .hero-btn {
   color: var(--primary-color-background, #fff);
-  font-family: Roboto;
+  font-family: var(--font-family);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5; /* 150% */
   background-color: var(--primary-color-bluefont, #0a224a);
-
   display: flex;
   width: 224px;
   padding: 12px 65px;
   justify-content: center;
   align-items: center;
   gap: 6px;
+  /* ---на кнопку ще треба поставити плавне включення по формулі, як в усіх інших секціях---- */
 }
 
 .hero-btn:hover,
@@ -112,28 +74,109 @@
   background: var(--color-hover-btn, #061835);
 }
 
+/* ------------Для екранів від 375рх------------ */
+
 @media screen and (min-width: 375px) {
 
-  .hero {
-    width: 100vw;
-  }
-  .hero-wrap {
-    width: 100%;
-  }
   .hero-text {
     width: 343px;
   }
+  .hero-wrap {
+    min-width: 375px;
+  }
 }
+
+/* ---------------------Tablet------------------- */
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
+
+  .hero {
+    padding-top: 64px;
+    background-image: none;
+  }
+  .hero-wrap {
+    padding: 0;
+    margin-top: 64px;
+    margin-bottom: 60px;
+    min-width: 375px;
+    max-width: 767px;
+    background-color: var(--primary-color-background, #d9d9d9);
+    background-image: url(../img/hero-img/hero-bg-tab-left.jpg),
+      url(../img/hero-img/hero-bg-tab-right.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 202px, top right;
+    background-size: 308px 329px, 364px 531px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 192dpi) {
+    .hero-wrap {
+      background-image: url(../img/hero-img/hero-bg-tab-left-2x.jpg),
+        url(../img/hero-img/hero-bg-tab-right-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 50px;
+    line-height: 1.5; /* 150% */
+    width: 648px;
+    padding-bottom: 378px;
+  }
+
+  .hero-text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    min-width: 312px;
+  }
 }
+
+/* ---------------Desktop-------------- */
+
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
     padding: 0 60px;
+  }
+  .hero {
+    margin-top: 64px;
+    /* margin-bottom: 100px; */
+  }
+  .hero-wrap {
+    min-width: 1320px;
+    height: 530px;
+    padding: 0;
+    background-color: var(--primary-color-background, #d9d9d9);
+    background-image: url(../img/hero-img/hero-bg-desk1.jpg),
+      url(../img/hero-img/hero-bg-desk2.jpg),
+      url(../img/hero-img/hero-bg-desk3.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0 202px, top center, top right;
+    background-size: 310px 329px, 648px 530px, 312px 337px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 192dpi) {
+    .hero-wrap {
+      background-image: url(../img/hero-img/hero-bg-desk1-2x.jpg),
+        url(../img/hero-img/hero-bg-desk2-2x.jpg),
+        url(../img/hero-img/hero-bg-desk3-2x.jpg);
+    }
+  }
+  .hero-title {
+    padding: 0;
+    margin-bottom: 246px;
+  }
+  .hero-text {
+    margin-bottom: 30px;
+  }
+  .hero-block {
+    width: 312px;
+    margin-left: auto;
   }
 }
