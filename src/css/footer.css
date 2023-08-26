@@ -94,6 +94,7 @@ footer-tel {
     padding-top: 36px;
     padding-bottom: 36px;
     position: relative;
+    z-index: 90;
   }
 
   .footer-logo {
@@ -151,6 +152,7 @@ footer-tel {
     position: static;
     gap: 30px;
     flex-direction: row;
+    z-index: 90;
   }
 
   .footer-firstline {
