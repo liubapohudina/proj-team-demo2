@@ -3,29 +3,18 @@
   padding-top: 36px;
   padding-bottom: 16px;
 }
-/*
-.container.footer-container {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 .footer-wrap-social {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}*/
+}
 .footer-wrap-logo {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-/*
-.footer-firstline {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-}*/
+
 .footer-logo {
   display: block;
   margin-bottom: 36px;
@@ -51,18 +40,18 @@
   line-height: 1.5; /* 150% */
 }
 
-.footer-container-social {
-}
 .footer-social {
   display: flex;
   gap: 16px;
 }
-.footer-social-list {
-}
-.footer-social-link {
-}
+
 .footer-social-icon {
   fill: var(--primary-color-background);
+  transition: fill 350ms ease-in-out;
+}
+.footer-social-link .footer-social-icon:hover,
+.footer-social-link .footer-social-icon:focus {
+  fill: hsla(196, 100%, 50%, 0.929);
 }
 
 .footer-address,
@@ -72,14 +61,7 @@ footer-tel {
 
 .footer-address-list {
   margin-bottom: 35px;
-  /*display: flex;
-  flex-direction: column;
-  gap: 8px;*/
 }
-/*
-.footer-time {
-  margin-bottom: 35px;
-}*/
 .footer-address-link {
   color: var(--primary-color-background);
   font-family: var(--font-family, 'Roboto', sans-serif);
@@ -105,6 +87,7 @@ footer-tel {
 .Privacy {
   text-decoration-line: underline;
 }
+
 /*==========768============*/
 @media screen and (min-width: 768px) {
   .footer {
@@ -112,13 +95,6 @@ footer-tel {
     padding-bottom: 36px;
     position: relative;
   }
-  /*
-  .footer-firstline {
-    display: flex;
-    justify-content: baseline;
-    align-items: flex-start;
-    gap: 249px;
-  }*/
 
   .footer-logo {
     margin-bottom: 32px;
@@ -149,18 +125,7 @@ footer-tel {
     line-height: 1.25;
     letter-spacing: 0.07em;
   }
-  /*
-  .footer-list:not(last-child) {
-    margin-bottom: 16px;
-  }
-  
-  .footer-address-item {
-    margin-bottom: 24px;
-  }
-  .footer-time {
-    margin-bottom: 64px;
-  }
-  */
+
   .footer-none {
     display: block;
     margin-bottom: 64px;
@@ -179,11 +144,6 @@ footer-tel {
     padding: 8px;
     margin-bottom: 0;
   }
-  /*
-  .footer-wrap {
-    margin-bottom: 32px;
-  }
-  */
 }
 /*=============1440============*/
 @media screen and (min-width: 1440px) {
@@ -192,12 +152,7 @@ footer-tel {
     gap: 30px;
     flex-direction: row;
   }
-  /*
-  .footer-wrap-logo {
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 30px;
-  }*/
+
   .footer-firstline {
     display: flex;
     justify-content: flex-start;
