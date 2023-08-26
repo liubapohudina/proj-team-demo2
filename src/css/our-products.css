@@ -1,6 +1,12 @@
 .our-products-title {
   text-align: center;
   margin-bottom: 33px;
+  color: var(--primary-color-bluefont);
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 .our-products-list {
   display: flex;
@@ -8,7 +14,7 @@
 
 .our-products-paragraf {
   margin-top: 16px;
-  color: var(--blue-font);
+  color: var(--primary-color-bluefont);
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 400;
