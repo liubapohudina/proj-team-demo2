@@ -1,7 +1,6 @@
 /* ------------Для екранів від 320рх------------ */
 
 .hero {
-  max-width: 375px;
   background-color: var(--primary-color-background, #d9d9d9);
   background-image: url(../img/hero-img/hero-bg-mob.jpg);
   background-repeat: no-repeat;
@@ -75,7 +74,7 @@
     width: 343px;
   }
   .hero-wrap {
-    min-width: 375px;
+    max-width: 375px;
   }
 }
 
