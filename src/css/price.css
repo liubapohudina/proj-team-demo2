@@ -2,6 +2,7 @@
 .price {
   padding: 64px 0;
 }
+
 .price-list-item {
   display: flex;
   justify-content: space-between;
@@ -74,4 +75,7 @@
   .price-list-prices {
     font-size: 18px;
   }
+    .price .price-block {
+      padding: 0;
+    }
 }
