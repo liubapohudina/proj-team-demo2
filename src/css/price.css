@@ -1,8 +1,7 @@
 /* ? mobile */
-.price {
-  padding: 64px 0;
-}
-
+ .price {
+   padding-bottom: 64px; 
+  }
 .price-list-item {
   display: flex;
   justify-content: space-between;
@@ -56,9 +55,13 @@
 @media (min-width: 768px) {
   .price-list-goods {
     font-size: 32px;
+    line-height: 1.4;
   }
   .price-list-prices {
     font-size: 18px;
+  }
+  .price {
+      padding: 100px 0;
   }
 }
 /* ? desctop */
@@ -66,9 +69,7 @@
   .price .container {
     max-width: 1096px;
   }
-  .price {
-    padding: 100px 0;
-  }
+ 
   .price-list-goods {
     font-size: 32px;
   }
