@@ -36,6 +36,9 @@
   .sub-div-main {
     text-align: unset;
   }
+  .section-six {
+    padding: 100px 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
