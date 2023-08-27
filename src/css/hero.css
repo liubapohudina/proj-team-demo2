@@ -18,7 +18,7 @@
 .hero-wrap {
   padding-top: 140px;
   padding-bottom: 313px;
-  max-width: 300px;
+  max-width: 375px;
   height: 717px;
   align-items: center;
 }
@@ -42,7 +42,7 @@
   font-style: normal;
   line-height: 1.5; /* 150% */
   margin-bottom: 28px;
-  max-width: 300px;
+  max-width: 375px;
 }
 .hero-btn {
   color: var(--primary-color-background, #fff);
@@ -68,7 +68,7 @@
 
 /* ------------Для екранів від 375рх------------ */
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
 
   .hero-text {
     width: 343px;
@@ -76,7 +76,7 @@
   .hero-wrap {
     max-width: 375px;
   }
-}
+} */
 
 /* ---------------------Tablet------------------- */
 
