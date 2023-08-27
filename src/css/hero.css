@@ -9,7 +9,7 @@
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 192dpi) {
+  (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero-img/hero-bg-mob-2x.jpg);
   }
@@ -105,7 +105,7 @@
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 192dpi) {
+      (min-resolution: 2dppx) {
     .hero-wrap {
       background-image: url(../img/hero-img/hero-bg-tab-left-2x.jpg),
         url(../img/hero-img/hero-bg-tab-right-2x.jpg);
@@ -152,7 +152,7 @@
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 192dpi) {
+      (min-resolution: 2dppx) {
     .hero-wrap {
       background-image: url(../img/hero-img/hero-bg-desk1-2x.jpg),
         url(../img/hero-img/hero-bg-desk2-2x.jpg),
