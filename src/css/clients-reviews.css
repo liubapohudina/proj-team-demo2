@@ -1,10 +1,13 @@
 .clients-reviews {
     background-color: var(--color-bg-lightblue);
     padding-top: 36px;
-    padding-bottom: 60px;
+    padding-bottom: 36px;
 }
 .clients-reviews img {
     min-width: 48px;
+}
+.cl-text {
+    height: 48px;
 }
 
 .clients-title {
@@ -89,6 +92,7 @@
     }
     .item-card {
         flex-basis: calc((100% - 16px) / 2);
+        gap: 14px;
     }
     .clients-title {
         font-size: 32px;
@@ -111,6 +115,9 @@
         width: 56px;
         height: 56px;
     }
+    .cl-text {
+        height: 65px;
+    }
 }
 /*--------------------desctop------------------*/
 @media screen and (min-width: 1440px) {
@@ -123,12 +130,16 @@
     .item-card {
         padding: 32px;
         flex-basis: calc((100% - 46px) / 3);
+        gap: 16px;
     }
     .clients-card {
         justify-content: center;
     }
     .clients-text {
         width: 360px;
+    }
+    .clients-reviews {
+        padding: 60px 0;
     }
     
 }
