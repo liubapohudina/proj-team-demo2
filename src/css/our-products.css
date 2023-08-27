@@ -11,7 +11,9 @@
 .our-products-list {
   display: flex;
 }
-
+.our-products-list-img {
+  height: 300px;
+}
 .our-products-paragraf {
   margin-top: 16px;
   color: var(--primary-color-bluefont);
@@ -43,6 +45,14 @@
   .our-products-list-items-4 {
     display: none;
   }
+  .our-products-title {
+      color: var(--primary-color-bluefont);
+      font-family: var(--font-family);
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
 }
 @media screen and (min-width: 1440px) {
   .our-products-list {
@@ -51,4 +61,12 @@
   .our-products-list-img {
     width: 312px;
   }
+    .our-products-title {
+      color: var(--primary-color-bluefont);
+      font-family: var(--font-family);
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
 }
