@@ -12,7 +12,6 @@
 .footer-wrap-logo {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
 }
 
 .footer-logo {
@@ -87,7 +86,11 @@ footer-tel {
 .Privacy {
   text-decoration-line: underline;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+.footer-wrap-logo {
+  align-items: baseline;
+}
+}
 /*==========768============*/
 @media screen and (min-width: 768px) {
   .footer {
@@ -160,6 +163,7 @@ footer-tel {
     justify-content: flex-start;
     align-items: baseline;
     gap: 209px;
+    margin-right: 286px;
   }
   .footer-contakt {
     display: flex;
@@ -180,11 +184,16 @@ footer-tel {
   }
   .footer-wrap-logo {
     margin-bottom: 24px;
+    justify-content: unset;
   }
   .footer-address-list {
     margin-right: 87px;
   }
   .footer-tel {
     margin-right: 82px;
+    margin-bottom: unset;
+  }
+  .footer-social {
+    gap: 30px;
   }
 }
